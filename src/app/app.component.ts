@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  // "app-root" – standart tag's name for app's main component
+  selector: 'app-root', // tag in ../index.html
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
