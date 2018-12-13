@@ -4,7 +4,8 @@ import { UsersService } from '../users.service';
 @Component({
   selector: 'app-user-table',
   templateUrl: './user-table.component.html',
-  styleUrls: ['./user-table.component.css']
+  styleUrls: ['./user-table.component.css'],
+  providers: [UsersService]
 })
 export class UserTableComponent implements OnInit {
   public users: Array<any>;
