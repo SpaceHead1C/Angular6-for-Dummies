@@ -15,6 +15,6 @@ import { AppRootSecondComponent } from './app-root-second/app-root-second.compon
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, AppRootSecondComponent]
 })
 export class AppModule { }
