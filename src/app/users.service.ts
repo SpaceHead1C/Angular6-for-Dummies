@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UsersService {
-  private clickCount: number = 0;
+  public clickCount: number = 0;
+  public creationDate: Date = new Date();
 
   constructor() { }
 
