@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AppRootSecondComponent } from './app-root-second/app-root-second.component';
+import { UserTableComponent } from './user-table/user-table.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppRootSecondComponent
+    UserTableComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +19,6 @@ import { AppRootSecondComponent } from './app-root-second/app-root-second.compon
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent, AppRootSecondComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
