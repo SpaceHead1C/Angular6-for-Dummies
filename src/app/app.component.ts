@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my application';
+  
+  users: Array<any> = [
+    {firstname: 'Пётр', lastname: 'Петров'},
+    {firstname: 'Иван', lastname: 'Иванов'},
+    {firstname: 'Степан', lastname: 'Сидоров'}
+  ];
 
   onButtonClick() {
     this.title = 'Button clicked!';
