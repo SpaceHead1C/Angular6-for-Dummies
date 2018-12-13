@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { UserTableComponent } from './user-table/user-table.component';
-import { UserListComponent } from './user-list/user-list.component';
 
 @Component({
   // "app-root" – standart tag's name for app's main component
