@@ -1,6 +1,6 @@
 # Модули
 
-![модули](https://github.com/SpaceHead1C/Angular6-for-Dummies/blob/master/docs//src/modules.png)
+![модули](https://github.com/SpaceHead1C/Angular6-for-Dummies/blob/master/docs/src/modules.png)
 
 Модули определяют, как части приложения взаимодействуют друг с другом.
 
@@ -29,7 +29,7 @@
 - директивы (Directive)
 - трубы (Pipe)
 
-![декларативные](https://github.com/SpaceHead1C/Angular6-for-Dummies/blob/master/docs//src/modules-declarations-declarables.png)
+![декларативные](https://github.com/SpaceHead1C/Angular6-for-Dummies/blob/master/docs/src/modules-declarations-declarables.png)
 
 Объединяет их то, что они могут быть размещены в представлении, то есть они выполняют какую-то логику и выводят результат на html-страницу.
 
