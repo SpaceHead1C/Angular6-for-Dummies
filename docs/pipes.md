@@ -12,7 +12,7 @@
 {{ today | date : 'dd-MM-yyy' }}
 ```
 
-![пайп](https://github.com/SpaceHead1C/Angular6-for-Dummies/blob/master/docs//src/pipes.png)
+![пайп](https://github.com/SpaceHead1C/Angular6-for-Dummies/blob/master/docs/src/pipes.png)
 
 Пайпы применяются также в полях ввода:
 
@@ -39,6 +39,6 @@
 
 Позволяет выводить объекты в json.
 
-![пайп json](https://github.com/SpaceHead1C/Angular6-for-Dummies/blob/master/docs//src/pipes-json.png)
+![пайп json](https://github.com/SpaceHead1C/Angular6-for-Dummies/blob/master/docs/src/pipes-json.png)
 
 Часто используется в отладке.
