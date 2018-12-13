@@ -15,6 +15,8 @@ export class AppComponent {
     {firstname: 'Степан', lastname: 'Сидоров'}
   ];
 
+  today: Date = new Date();
+
   onButtonClick() {
     this.title = 'Button clicked!';
   }
