@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UsersService {
+  private clickCount: number = 0;
 
   constructor() { }
 
@@ -13,5 +14,9 @@ export class UsersService {
       {firstname: 'Иван', lastname: 'Иванов'},
       {firstname: 'Степан', lastname: 'Сидоров'}
     ];
+  }
+
+  public increase() {
+    this.clickCount++;
   }
 }
