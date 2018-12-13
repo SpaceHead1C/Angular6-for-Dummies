@@ -1,6 +1,6 @@
 # Структура компонента
 
-![структура компонента](docs/src/component-structure.png)
+![структура компонента](https://github.com/SpaceHead1C/Angular6-for-Dummies/blob/master/docs//src/component-structure.png)
 
 ### Template (шаблон)
 
