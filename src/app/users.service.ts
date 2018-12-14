@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,14 +9,12 @@ export class UsersService {
   public clickCount: number = 0;
   public creationDate: Date = new Date();
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
-  public getUsers(): Array<any> {
-    return [
-      {firstname: 'Пётр', lastname: 'Петров'},
-      {firstname: 'Иван', lastname: 'Иванов'},
-      {firstname: 'Степан', lastname: 'Сидоров'}
-    ];
+  private usersUrl = 'api/users'; // endpoint
+
+  public getUsers(): Observable<Array<any>> {
+    return this.httpClient.get<any[]>(this.usersUrl);
   }
 
   public increase() {
