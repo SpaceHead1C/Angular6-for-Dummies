@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { InMemoryDataService } from './api/in-memory-data.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    NgbModule.forRoot(), // "forRoot()" only for main module required
     HttpClientModule,
     // Please, remove this when real API will be ready
     HttpClientInMemoryWebApiModule.forRoot(
