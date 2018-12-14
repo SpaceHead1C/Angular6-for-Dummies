@@ -10,8 +10,8 @@ import { UsersService } from '../users.service';
 export class UserListComponent implements OnInit {
   public users: Array<any>;
 
-  constructor(public usersService: UsersService) {
-    this.users = usersService.getUsers();
+  constructor(private usersService: UsersService) {
+    usersService.getUsers().subscribe(users => this.users = users);
   }
 
   ngOnInit() {
