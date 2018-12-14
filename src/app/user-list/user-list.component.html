@@ -5,4 +5,4 @@
 </ul>
 <h3>Created on: {{ usersService.creationDate | date : 'dd.MM.yyy &nbsp; HH:mm:ss:SSS' }}</h3>
 <h3>Clicked {{ usersService.clickCount }} times</h3>
-<button (click)="usersService.increase()">Click</button>
+<button class="btn btn-secondary" (click)="usersService.increase()">Click</button>
