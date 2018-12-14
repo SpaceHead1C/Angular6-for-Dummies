@@ -5,8 +5,8 @@ import { InMemoryDbService } from 'angular-in-memory-web-api';
   providedIn: 'root'
 })
 export class InMemoryDataService implements InMemoryDbService {
-  /* This automaticly gives api with path "/api/users"
-   * If we add const "userGroups" for example then we "return { users, userGroups }"
+  /* This automaticly gives endpoint path "/api/users"
+   * If we add const "userGroups" for example then we "return { users, userGroups }" (for "/api/userGroups")
    */
   createDb() {
     const users = [
