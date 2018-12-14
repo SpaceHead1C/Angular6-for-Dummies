@@ -8,14 +8,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserTableComponent } from './user-table/user-table.component';
-import { UserListComponent } from './user-list/user-list.component';
 import { InMemoryDataService } from './api/in-memory-data.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserTableComponent,
-    UserListComponent
+    UserTableComponent
   ],
   imports: [
     BrowserModule,
