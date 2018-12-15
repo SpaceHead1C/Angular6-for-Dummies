@@ -3,7 +3,10 @@
   <form action="">
     <div class="form-group">
       <label for="firstName">Имя:</label>
-      <input #spy type="text" [(ngModel)]="user.firstname" name="firstname" class="form-control" id="firstName">
+      <input #spy #firstname="ngModel" required type="text" [(ngModel)]="user.firstname" name="firstname" class="form-control" id="firstName">
+      <div class="alert alert-danger" [hidden]="firstname.valid || firstname.pristine">
+        Поле 'Имя' обязательно для заполнения
+      </div>
     </div>
     <div class="form-group">
       <label for="lastName">Фамилия:</label>
