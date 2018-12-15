@@ -9,12 +9,28 @@ import { UsersService } from '../users.service';
 })
 export class UserTableComponent implements OnInit {
   public users: Array<any>;
+  public page: number;
+  public collectionSize: number;
+  public itemsPerPage: number;
 
   constructor(private usersService: UsersService) {
-    usersService.getUsers().subscribe(users => this.users = users);
+    this.page = 1;
+    this.itemsPerPage = 3;
+    this.loadPage();
   }
 
   ngOnInit() {
+  }
+
+  onPageChange(pageNumber) {
+    this.loadPage();
+  }
+
+  private loadPage() {
+    this.usersService.getUsers(this.page, this.itemsPerPage).subscribe(page => {
+      this.users = page.rows;
+      this.collectionSize = page.totalCount;
+    });
   }
 
 }
