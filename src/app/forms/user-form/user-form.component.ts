@@ -25,7 +25,7 @@ export class UserFormComponent implements OnInit {
     this.user = new User();
   }
 
-  public submit() {
+  public onSubmit() {
     // todo: submit data
     this.formSubmited = true;
   }
