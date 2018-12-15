@@ -12,7 +12,15 @@ export class InMemoryDataService implements InMemoryDbService {
     const users = [
       {firstname: 'Пётр', lastname: 'Петров'},
       {firstname: 'Иван', lastname: 'Иванов'},
-      {firstname: 'Степан', lastname: 'Сидоров'}
+      {firstname: 'Степан', lastname: 'Сидоров'},
+      {firstname: 'Богдан', lastname: 'Ступка'},
+      {firstname: 'Вася', lastname: 'Хмурый'},
+      {firstname: 'Илья', lastname: 'Кузнецов'},
+      {firstname: 'Дмитрий', lastname: 'Бадьянов'},
+      {firstname: 'Света', lastname: 'Мицура'},
+      {firstname: 'Евгения', lastname: 'Степаненко'},
+      {firstname: 'Вакула', lastname: 'Коваль'},
+      {firstname: 'Ян', lastname: 'Скрипко'}
     ];
     return { users };
   }
