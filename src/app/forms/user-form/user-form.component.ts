@@ -8,10 +8,12 @@ import { User } from 'src/app/models/user';
 })
 export class UserFormComponent implements OnInit {
   public user: User;
+  public formSubmited: boolean;
 
   constructor() { }
 
   ngOnInit() {
+    this.formSubmited = false;
     this.user = {
       id: 1,
       firstname: 'Кот',
@@ -21,6 +23,11 @@ export class UserFormComponent implements OnInit {
 
   public onCleanButtonClick() {
     this.user = new User();
+  }
+
+  public submit() {
+    // todo: submit data
+    this.formSubmited = true;
   }
 
 }
