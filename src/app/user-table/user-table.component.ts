@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../users.service';
+import { User } from '../models/user';
 
 @Component({
   selector: 'app-user-table',
@@ -8,7 +9,7 @@ import { UsersService } from '../users.service';
   providers: [UsersService]
 })
 export class UserTableComponent implements OnInit {
-  public users: Array<any>;
+  public users: Array<User>;
   public page: number;
   public collectionSize: number;
   public itemsPerPage: number;
