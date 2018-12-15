@@ -9,11 +9,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserTableComponent } from './user-table/user-table.component';
 import { InMemoryDataService } from './api/in-memory-data.service';
+import { UserFormComponent } from './forms/user-form/user-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserTableComponent
+    UserTableComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
