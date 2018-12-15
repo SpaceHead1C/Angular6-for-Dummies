@@ -14,7 +14,7 @@ export class UserTableComponent implements OnInit {
 
   constructor(private usersService: UsersService) {
     this.page = 1;
-    
+
     usersService.getUsers().subscribe(users => {
       this.users = users;
       this.collectionSize = this.users.length;
@@ -22,6 +22,10 @@ export class UserTableComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onPageChange(pageNumber) {
+    console.log('page changed: ' + pageNumber);
   }
 
 }

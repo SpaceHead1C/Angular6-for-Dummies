@@ -15,6 +15,6 @@
       </td>
     </tr>
   </table>
-  <ngb-pagination class="d-flex justify-content-center" [collectionSize]="collectionSize" [pageSize]="20" [(page)]="page" [boundaryLinks]="true"></ngb-pagination>
+  <ngb-pagination class="d-flex justify-content-center" [collectionSize]="collectionSize" [pageSize]="5" [(page)]="page" [boundaryLinks]="true" (pageChange)="onPageChange($event)"></ngb-pagination>
   {{ page }}
 </div>
