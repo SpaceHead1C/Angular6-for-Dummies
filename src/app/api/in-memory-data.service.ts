@@ -10,17 +10,17 @@ export class InMemoryDataService implements InMemoryDbService {
    */
   createDb() {
     const users = [
-      {firstname: 'Пётр', lastname: 'Петров'},
-      {firstname: 'Иван', lastname: 'Иванов'},
-      {firstname: 'Степан', lastname: 'Сидоров'},
-      {firstname: 'Богдан', lastname: 'Ступка'},
-      {firstname: 'Вася', lastname: 'Хмурый'},
-      {firstname: 'Илья', lastname: 'Кузнецов'},
-      {firstname: 'Дмитрий', lastname: 'Бадьянов'},
-      {firstname: 'Света', lastname: 'Мицура'},
-      {firstname: 'Евгения', lastname: 'Степаненко'},
-      {firstname: 'Вакула', lastname: 'Коваль'},
-      {firstname: 'Ян', lastname: 'Скрипко'}
+      {id: 1,  firstname: 'Пётр',    lastname: 'Петров'},
+      {id: 2,  firstname: 'Иван',    lastname: 'Иванов'},
+      {id: 3,  firstname: 'Степан',  lastname: 'Сидоров'},
+      {id: 4,  firstname: 'Богдан',  lastname: 'Ступка'},
+      {id: 5,  firstname: 'Вася',    lastname: 'Хмурый'},
+      {id: 6,  firstname: 'Илья',    lastname: 'Кузнецов'},
+      {id: 7,  firstname: 'Дмитрий', lastname: 'Бадьянов'},
+      {id: 8,  firstname: 'Света',   lastname: 'Мицура'},
+      {id: 9,  firstname: 'Евгения', lastname: 'Степаненко'},
+      {id: 10, firstname: 'Вакула',  lastname: 'Коваль'},
+      {id: 11, firstname: 'Ян',      lastname: 'Скрипко'}
     ];
     return { users };
   }
