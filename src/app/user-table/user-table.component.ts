@@ -9,9 +9,16 @@ import { UsersService } from '../users.service';
 })
 export class UserTableComponent implements OnInit {
   public users: Array<any>;
+  public page: number;
+  public collectionSize: number;
 
   constructor(private usersService: UsersService) {
-    usersService.getUsers().subscribe(users => this.users = users);
+    this.page = 1;
+    
+    usersService.getUsers().subscribe(users => {
+      this.users = users;
+      this.collectionSize = this.users.length;
+    });
   }
 
   ngOnInit() {
