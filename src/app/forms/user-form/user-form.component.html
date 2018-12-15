@@ -1,6 +1,6 @@
 {{ user | json }}
 <div class="container">
-  <form action="">
+  <form #userForm action="">
     <div class="form-group">
       <label for="firstName">Имя:</label>
       <input #spy #firstname="ngModel" required type="text" [(ngModel)]="user.firstname" name="firstname" class="form-control" id="firstName">
@@ -14,5 +14,6 @@
     </div>
     {{ spy.className }}
     <button type="submit" class="btn btn-success">Сохранить</button>
+    <button type="button" (click)="onCleanButtonClick(); userForm.reset()" class="btn btn-light">Очистить</button>
   </form>
 </div>

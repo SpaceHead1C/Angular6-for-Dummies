@@ -19,4 +19,8 @@ export class UserFormComponent implements OnInit {
     }
   }
 
+  public onCleanButtonClick() {
+    this.user = new User();
+  }
+
 }
