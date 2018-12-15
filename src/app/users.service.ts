@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { Page } from './page';
 
 @Injectable({
   providedIn: 'root'
@@ -13,8 +15,18 @@ export class UsersService {
 
   private usersUrl = 'api/users'; // endpoint
 
-  public getUsers(): Observable<Array<any>> {
-    return this.httpClient.get<any[]>(this.usersUrl);
+  public getUsers(page: number, itemsPerPage: number): Observable<Page> {
+    let users = this.httpClient.get<any[]>(this.usersUrl);
+    return this.getPageItems(users, page, itemsPerPage);
+  }
+
+  private getPageItems(users: Observable<Array<any>>, page: number, itemsPerPage: number): Observable<Page> {
+    return users.pipe(
+      map(user => {
+          let startIndex = itemsPerPage * (page - 1);
+          return new Page(user.length, user.slice(startIndex, startIndex + itemsPerPage));
+        })
+    );
   }
 
   public increase() {
